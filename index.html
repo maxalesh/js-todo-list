@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Todo List</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<div class="todo">
+  <div class="todo__app">
+    <form class="todo__form">
+      <input
+          type="text"
+          placeholder="Add a new task"
+          class="todo__input"
+          aria-label="Enter a new task name"
+      />
+      <button type="submit" class="todo__add-btn">
+        <img src="icons/plus.svg" alt="Add" class="todo__add-icon">
+      </button>
+    </form>
+    
+    <p class="todo__empty-message">Add your first task!</p>
+    
+    <div class=" todo__tasks tasks">
+      <div class="tasks__section tasks__section--active">
+        <h2 class="tasks__title ">Tasks to do - <span id="tasks__active-count"></span></h2>
+        <ul class="tasks__list tasks__list--active">
+        </ul>
+      </div>
+      
+      <div class="tasks__section tasks__section--done">
+        <h2 class="tasks__title">Done - <span id="tasks__done-count"></span></h2>
+        <ul class="tasks__list tasks__list--done">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
