@@ -1,3 +1,4 @@
+
 const form = document.querySelector('.todo__form');
 const input = document.querySelector('.todo__input');
 const tasksListActive = document.querySelector('.tasks__list--active');
