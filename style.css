@@ -1,0 +1,126 @@
+:root {
+    --background-color: #0D0714;
+    --todo-bg-color: #1D1825;
+    --input-bg: #1D1825;
+    --input-placeholder-color: #777777;
+    --text-primary: #FFFFFF;
+    --font-size-base: 16px;
+    --accent-color: #9E78CF;
+    --task-bg-color: #15101C;
+    --done-text-color: #78CFB0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    font-family: Inter, sans-serif;
+    font-size: var(--font-size-base);
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: var(--font-size-base);
+}
+
+.hidden {
+    display: none;
+}
+
+.todo {
+    width: 100%;
+    max-width: 583px;
+    background-color: var(--todo-bg-color);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.todo__app {
+    padding: 50px 65px;
+    max-width: 432px;
+    margin: 0 auto;
+}
+
+.tasks {
+    padding-top: 59px;
+}
+
+.todo__input {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 381px;
+    padding: 10px 0 10px 14px;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: var(--input-bg);
+    color: var(--input-placeholder-color);
+    outline: none;
+}
+
+.todo__form {
+    display: flex;
+    gap: 11px;
+}
+
+.todo__add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    padding: 0;
+    cursor: pointer;
+}
+
+.todo__add-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.tasks__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+}
+
+.tasks__item {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 432px;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    color: var(--accent-color);
+    border-radius: 10px;
+    background-color: var(--task-bg-color);
+}
+
+.tasks__list--done .tasks__item {
+    color: var(--done-text-color);
+    text-decoration: line-through;
+}
+
+.tasks__controls {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.tasks__btn {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tasks__icon {
+    width: 22px;
+    height: 22px;
+}
